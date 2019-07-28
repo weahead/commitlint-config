@@ -16,16 +16,14 @@
    module.exports = require('@weahead/commitlint-config');
    ```
 
-2. Optionally, add `"commit": "commit"` to `scripts` in `package.json`:
+2. Optionally, add a run target to `scripts` in `package.json`:
 
-   ```js
-   // package.json
-   ...
-   scripts: {
-     ...
-    "commit": "commit"
+   ```json
+   {
+     scripts: {
+       "commit": "commit"
+     }
    }
-   ...
    ```
 
 3. Optionally, create a git alias to run `commit` script via `git`. You can choose almost whatever you like as the value for `<NAME>`.
