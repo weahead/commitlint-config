@@ -2,11 +2,9 @@
 
 [We aheads](https://www.weahead.se/) commitlint config.
 
-
 ## Install
 
 `npx install-peerdeps -d -x '-E' @weahead/commitlint-config`
-
 
 ### Usage
 
@@ -20,7 +18,7 @@
 
    ```json
    {
-     scripts: {
+     "scripts": {
        "commit": "commit"
      }
    }
@@ -33,7 +31,6 @@ git config --global alias.<NAME> '!npm run commit'
 ```
 
 For example `git config --global alias.ci '!npm run commit'` would run commit script on `git ci`.
-
 
 ## License
 
