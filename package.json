@@ -25,7 +25,9 @@
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
     "@commitlint/prompt-cli": "8.1.0",
+    "@weahead/lint-staged-config": "0.2.1",
     "@weahead/prettier-config": "0.1.3",
+    "lint-staged": "9.2.1",
     "prettier": "1.18.2"
   },
   "peerDependencies": {
