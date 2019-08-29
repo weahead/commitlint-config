@@ -1,3 +1,6 @@
 {
-  "extends": ["@weahead/eslint-config-tool"]
+  "extends": ["@weahead/eslint-config-tool"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  }
 }
