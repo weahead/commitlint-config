@@ -8,29 +8,19 @@
 
 ### Usage
 
-1. Create a file named `.commitlintrc.js` and fill it with:
+A `.commitlintrc.js` file will automatically be created in the root of your project with:
 
-   ```js
-   module.exports = require('@weahead/commitlint-config');
-   ```
-
-2. Optionally, add a run target to `scripts` in `package.json`:
-
-   ```json
-   {
-     "scripts": {
-       "commit": "commit"
-     }
-   }
-   ```
-
-3. Optionally, create a git alias to run `commit` script via `git`. You can choose almost whatever you like as the value for `<NAME>`.
-
-```sh
-git config --global alias.<NAME> '!npm run commit'
+```js
+module.exports = require("@weahead/commitlint-config");
 ```
 
-For example `git config --global alias.ci '!npm run commit'` would run commit script on `git ci`.
+#### Turn off Commitizen
+
+Use this config if you don't want help from [Commitizen](http://commitizen.github.io/cz-cli/) to create commit messages:
+
+`git config --global wa.noautocz true`
+
+**_Note!_** This does not turn off the linting of your commit messages, it only turns off the help from `Commitizen` when creating the commit message.
 
 ## License
 

@@ -1,15 +1,17 @@
 {
   "name": "@weahead/commitlint-config",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "We aheads configuration for commitlint.",
   "main": "index.js",
   "scripts": {
     "commitlint": "echo $MSG | commitlint",
     "commit": "commit",
-    "lint": "eslint --fix '**/*.js' '**/*.json'"
+    "lint": "eslint --fix '**/*.js' '**/*.json'",
+    "postinstall": "./scripts/postinstall.sh"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "scripts/*"
   ],
   "repository": {
     "type": "git",
