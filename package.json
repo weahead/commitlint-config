@@ -42,6 +42,7 @@
   "peerDependencies": {
     "@commitlint/cli": ">=8",
     "@commitlint/config-conventional": ">=8",
-    "@commitlint/prompt-cli": ">=8"
+    "@commitlint/prompt-cli": ">=8",
+    "@weahead/commitlint-plugin-weahead": ">=0"
   }
 }
