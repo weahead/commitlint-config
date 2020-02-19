@@ -1,6 +1,7 @@
 const fs = require('fs');
+const path = require('path');
 
-const commitlintrcPath = `${process.env.INIT_CWD}/.commitlintrc.js`;
+const commitlintrcPath = path.join(process.env.INIT_CWD, '.commitlintrc.js');
 
 if (!fs.existsSync(commitlintrcPath)) {
   fs.writeFileSync(
